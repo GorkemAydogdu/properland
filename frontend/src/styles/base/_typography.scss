@@ -1,0 +1,28 @@
+.heading-primary {
+  font-size: 6.5rem;
+}
+
+.heading-secondary {
+  font-size: 4.5rem;
+}
+
+.heading-primary,
+.heading-secondary {
+  font-family: $font-kufam;
+  font-weight: 700;
+  line-height: $line-height-primary;
+}
+
+.heading-tertiary {
+  font-size: 2rem;
+  font-family: $font-source-sans-3;
+  font-weight: 400;
+  line-height: $line-height-secondary;
+  letter-spacing: 30%;
+}
+
+.heading-primary,
+.heading-secondary,
+.heading-tertiary {
+  color: $color-primary;
+}
