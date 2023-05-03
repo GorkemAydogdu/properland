@@ -1,0 +1,18 @@
+.button {
+  font-size: 2rem;
+  font-family: $font-kufam;
+  font-weight: 500;
+  border-radius: $default-border-radius;
+
+  &--dark {
+    background-color: $color-primary;
+    color: $color-white;
+    padding: 2rem 4rem;
+    border: 2px solid $color-primary;
+    transition: all 200ms ease;
+    &:hover {
+      background-color: $color-white;
+      color: $color-black;
+    }
+  }
+}
