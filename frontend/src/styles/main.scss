@@ -10,9 +10,74 @@
 @import "base/typography";
 @import "base/utilites";
 
+@import "components/agency.scss";
 @import "components/button.scss";
+@import "components/title.scss";
 
 @import "layout/footer";
 @import "layout/header";
 
 @import "pages/home";
+
+.banner {
+  padding: 9rem 14rem 0;
+  background: linear-gradient(107.52deg, #fff6f2 16.64%, #eec1ac);
+  position: relative;
+  overflow: hidden;
+
+  &__content {
+    display: flex;
+    margin: 14rem 0;
+    width: 100vw;
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    gap: 3.8rem;
+    width: 52vw;
+    height: max-content;
+    position: relative;
+    z-index: 20;
+
+    & .button--white {
+      gap: 1.5rem;
+
+      img {
+        transition: all 200ms ease;
+      }
+
+      &:hover img {
+        transform: translateX(7px);
+      }
+    }
+  }
+
+  &__ImageWrap {
+    width: 100%;
+  }
+
+  &__thumb {
+    width: 55%;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+    object-fit: cover;
+  }
+}
+
+.particle {
+  position: absolute;
+  z-index: 1;
+
+  &--left {
+    bottom: 0;
+    left: 0;
+  }
+  &--right {
+    top: 0;
+    right: 0;
+  }
+}

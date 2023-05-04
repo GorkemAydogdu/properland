@@ -1,0 +1,26 @@
+.agency {
+  background: rgb(255, 178, 141);
+  background: linear-gradient(
+    270deg,
+    rgba(255, 178, 141, 1) 0%,
+    rgba(243, 209, 193, 1) 100%
+  );
+  padding: 1rem 1.5rem;
+  display: inline-flex;
+  gap: 1.5rem;
+  width: max-content;
+
+  img {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  &__title {
+    font-family: $font-kufam;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: $line-height-primary;
+    letter-spacing: 0.275rem;
+    color: $color-link;
+  }
+}

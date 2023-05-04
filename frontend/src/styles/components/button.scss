@@ -3,16 +3,25 @@
   font-family: $font-kufam;
   font-weight: 500;
   border-radius: $default-border-radius;
+  padding: 2rem 4rem;
+  width: max-content;
+
+  display: flex;
+  align-items: center;
 
   &--dark {
     background-color: $color-primary;
     color: $color-white;
-    padding: 2rem 4rem;
     border: 2px solid $color-primary;
     transition: all 200ms ease;
     &:hover {
       background-color: $color-white;
       color: $color-black;
     }
+  }
+
+  &--white {
+    background-color: $color-white;
+    color: $color-primary;
   }
 }

@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import Image from "next/image";
-import ArrowDown from "@/assets/Vector.svg";
+import ArrowDown from "@/assets/ArrowDown.svg";
 
 const HeaderNavbar = () => {
   const dropDownList = useRef();

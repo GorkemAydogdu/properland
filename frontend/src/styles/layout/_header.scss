@@ -1,7 +1,8 @@
 .header {
   background-color: $color-white;
-  margin: 0 14rem;
   justify-content: space-between;
+  position: relative;
+  z-index: 20;
 
   padding: 4.5rem;
 
@@ -58,11 +59,4 @@
   &__dropdownItem {
     padding: 1rem 2rem;
   }
-}
-
-.banner {
-  width: 100vw;
-  height: 100vh;
-  padding-top: 90px;
-  background: linear-gradient(107.52deg, #fff6f2 16.64%, #eec1ac);
 }

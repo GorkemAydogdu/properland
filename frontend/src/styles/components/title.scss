@@ -1,0 +1,17 @@
+.title {
+  font-family: $font-kufam;
+  font-weight: 700;
+  color: $color-primary;
+  line-height: $line-height-primary;
+
+  &--primary {
+    font-size: 3.385vw;
+  }
+}
+
+.description {
+  font-size: 2rem;
+  font-family: $font-source-sans-3;
+  line-height: $line-height-primary;
+  color: $color-link;
+}
