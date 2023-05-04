@@ -1,5 +1,13 @@
 import Head from "next/head";
 import Header from "@/layout/header/header";
+import Agency from "@/components/agency";
+import Title from "@/components/title";
+import ArrowRight from "@/assets/ArrowRight.svg";
+import HouseThumb from "@/assets/HouseThumb.png";
+import LeftParcitle from "@/assets/LeftParticle.png";
+import RightParcitle from "@/assets/RightParticle.png";
+import Image from "next/image";
+
 export default function Home() {
   return (
     <>
@@ -12,6 +20,32 @@ export default function Home() {
       <>
         <section className="banner">
           <Header />
+          <section className="banner__content">
+            <div className="banner__text">
+              <Agency>Real Estate Agency</Agency>
+              <Title>Find the perfect place to Live with your family</Title>
+              <p className="description">
+                Distinctively re-engineer revolutionary meta-services and
+                premium architectures. Intrinsically incubate.
+              </p>
+              <a href="/" className="button button--white">
+                Explore Property <Image src={ArrowRight} alt="Arrow Right" />
+              </a>
+            </div>
+            <div className="banner__ImageWrap">
+              <Image className="banner__thumb" src={HouseThumb} alt="House" />
+            </div>
+          </section>
+          <Image
+            className="particle particle--left"
+            src={LeftParcitle}
+            alt="Left Particle"
+          />
+          <Image
+            className="particle particle--right"
+            src={RightParcitle}
+            alt="Right Particle"
+          />
         </section>
       </>
     </>
