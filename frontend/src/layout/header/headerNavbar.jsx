@@ -14,7 +14,7 @@ const HeaderNavbar = () => {
   };
 
   return (
-    <nav className="header__navbar u-d-flex-a-center">
+    <nav className="header__navbar header__navbar--mobile u-d-flex-a-center">
       <ul className="header__list u-d-flex-a-center">
         <li className="header__item">
           <a href="/" className="header__link header__link--active">

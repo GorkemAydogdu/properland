@@ -1,0 +1,8 @@
+.container {
+  max-width: 83.5vw;
+  margin: auto;
+
+  @include respond(smallScreens) {
+    max-width: 91.5vw;
+  }
+}

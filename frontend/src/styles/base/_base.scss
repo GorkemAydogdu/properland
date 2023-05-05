@@ -8,6 +8,22 @@
 
 html {
   font-size: 62.5%;
+
+  @include respond(laptops) {
+    font-size: 56.25%;
+  }
+  @include respond(smallScreens) {
+    font-size: 56.25%;
+  }
+  @include respond(tablets) {
+    font-size: 43.75%;
+  }
+  @include respond(mobile) {
+    font-size: 37.5%;
+  }
+  @include respond(smallMobile) {
+    font-size: 31.25%;
+  }
 }
 
 a {

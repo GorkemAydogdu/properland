@@ -19,34 +19,44 @@ export default function Home() {
       </Head>
       <>
         <section className="banner">
-          <Header />
-          <section className="banner__content">
-            <div className="banner__text">
-              <Agency>Real Estate Agency</Agency>
-              <Title>Find the perfect place to Live with your family</Title>
-              <p className="description">
-                Distinctively re-engineer revolutionary meta-services and
-                premium architectures. Intrinsically incubate.
-              </p>
-              <a href="/" className="button button--white">
-                Explore Property <Image src={ArrowRight} alt="Arrow Right" />
-              </a>
-            </div>
-            <div className="banner__ImageWrap">
-              <Image className="banner__thumb" src={HouseThumb} alt="House" />
-            </div>
-          </section>
-          <Image
-            className="particle particle--left"
-            src={LeftParcitle}
-            alt="Left Particle"
-          />
-          <Image
-            className="particle particle--right"
-            src={RightParcitle}
-            alt="Right Particle"
-          />
+          <div className="container">
+            <Header />
+            <section className="banner__content">
+              <div className="banner__text">
+                <Agency>Real Estate Agency</Agency>
+                <Title>Find the perfect place to Live with your family</Title>
+                <p className="description">
+                  Distinctively re-engineer revolutionary meta-services and
+                  premium architectures. Intrinsically incubate.
+                </p>
+                <a href="/" className="button button--white">
+                  Explore Property <Image src={ArrowRight} alt="Arrow Right" />
+                </a>
+              </div>
+              <div className="banner__ImageWrap">
+                <Image className="banner__thumb" src={HouseThumb} alt="House" />
+              </div>
+            </section>
+            <Image
+              className="particle particle--left"
+              src={LeftParcitle}
+              alt="Left Particle"
+            />
+            <Image
+              className="particle particle--right"
+              src={RightParcitle}
+              alt="Right Particle"
+            />
+          </div>
         </section>
+        <div className="container">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas veniam
+          libero nulla commodi voluptates ipsum repellendus itaque accusantium
+          laboriosam officiis. Corrupti aliquid omnis expedita aperiam natus
+          repellendus atque assumenda ad doloremque velit quae quaerat
+          aspernatur dignissimos magnam sed a, at odit numquam et cum? Alias
+          iusto saepe distinctio ipsum veritatis?
+        </div>
       </>
     </>
   );

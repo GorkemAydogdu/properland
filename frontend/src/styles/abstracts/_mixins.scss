@@ -11,42 +11,42 @@
 
 @mixin respond($breakpoint) {
   @if $breakpoint == smallMobile {
-    @media only screen and (max-width: 19.9375em) {
-      //max-width: 319px = 319px/16 = 19.9375em
+    @media only screen and (max-width: 20em) {
+      //max-width: 320px = 320px/16 = 20em
       @content;
     }
   }
   @if $breakpoint == mobile {
-    @media only screen and (min-width: 20em) and (max-width: 30em) {
-      //max-width: 320px — 480px = 20em | 30em
+    @media only screen and (max-width: 30em) {
+      //max-width: 480px =  30em
       @content;
     }
   }
   @if $breakpoint == tablets {
-    @media only screen and (min-width: 30.0625em) and (max-width: 48em) {
-      //max-width: 481px — 768px = 30.0625em | 48em
+    @media only screen and (max-width: 48em) {
+      //max-width:768px = 48em
       @content;
     }
   }
-  @if $breakpoint == small-screens {
-    @media only screen and (min-width: 48.0625em) and (max-width: 64em) {
-      //max-width: 769px — 1024px = 48.0625em| 64em
+  @if $breakpoint == smallScreens {
+    @media only screen and (max-width: 64em) {
+      //max-width: 1024px = 64em
       @content;
     }
   }
   @if $breakpoint == laptops {
-    @media only screen and (min-width: 64.0625em) and (max-width: 85.375em) {
-      //max-width: 1025px - 1366px = 64.0625em | 85.375em
+    @media only screen and (max-width: 85.375em) {
+      //max-width: 1366px = 85.375em
       @content;
     }
   }
   @if $breakpoint == desktops {
-    @media only screen and (min-width: 85.4375em) and (max-width: 120em) {
-      //max-width: 1367px - 1920px = 85.4375em | 120em
+    @media only screen and (max-width: 120em) {
+      //max-width: 1920px = 120em
       @content;
     }
   }
-  @if $breakpoint == extra-large-screens {
+  @if $breakpoint == extraLargeScreens {
     @media only screen and (min-width: 120.0625em) {
       //min-width: 1921px = 1921px/16 = 120.0625em
       @content;

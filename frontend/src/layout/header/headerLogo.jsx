@@ -5,7 +5,6 @@ const HeaderLogo = () => {
   return (
     <a href="/" className="header__logo">
       <Image src={Logo} alt="Logo" />
-      <span>ProperLand</span>
     </a>
   );
 };

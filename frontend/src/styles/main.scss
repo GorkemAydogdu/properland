@@ -14,34 +14,75 @@
 @import "components/button.scss";
 @import "components/title.scss";
 
+@import "layout/container";
 @import "layout/footer";
 @import "layout/header";
 
 @import "pages/home";
 
 .banner {
-  padding: 9rem 14rem 0;
+  padding: 9rem 0;
   background: linear-gradient(107.52deg, #fff6f2 16.64%, #eec1ac);
   position: relative;
   overflow: hidden;
 
+  @include respond(laptops) {
+    padding: 8rem 0;
+  }
+  @include respond(smallScreens) {
+    padding: 7rem 0;
+  }
+  @include respond(tablets) {
+    padding: 6rem 0;
+  }
+
   &__content {
     display: flex;
     margin: 14rem 0;
-    width: 100vw;
+
+    @include respond(laptops) {
+      margin: 10rem 0;
+    }
+
+    @include respond(tablets) {
+      flex-direction: column;
+      gap: 20rem;
+    }
+
+    @include respond(mobile) {
+      gap: 32rem;
+    }
   }
 
   &__text {
     display: flex;
     flex-direction: column;
     gap: 3.8rem;
-    width: 52vw;
+    width: 56rem;
     height: max-content;
     position: relative;
     z-index: 20;
 
+    @include respond(laptops) {
+      width: 52rem;
+    }
+
+    @include respond(tablets) {
+      width: 100%;
+    }
+
     & .button--white {
       gap: 1.5rem;
+
+      @include respond(tablets) {
+        padding: 3.5rem 5.5rem;
+        font-size: 2.4rem;
+      }
+
+      @include respond(mobile) {
+        padding: 4.5rem 6.5rem;
+        font-size: 2.8rem;
+      }
 
       img {
         transition: all 200ms ease;
@@ -53,10 +94,6 @@
     }
   }
 
-  &__ImageWrap {
-    width: 100%;
-  }
-
   &__thumb {
     width: 55%;
     height: auto;
@@ -65,12 +102,28 @@
     right: 0;
     z-index: 2;
     object-fit: cover;
+
+    @include respond(laptops) {
+      width: 50%;
+    }
+
+    @include respond(tablets) {
+      width: 57%;
+    }
+
+    @include respond(mobile) {
+      width: 100%;
+    }
   }
 }
 
 .particle {
   position: absolute;
   z-index: 1;
+
+  @include respond(smallScreens) {
+    display: none;
+  }
 
   &--left {
     bottom: 0;
