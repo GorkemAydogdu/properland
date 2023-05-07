@@ -16,41 +16,79 @@
     align-items: flex-start;
     padding: 2.5rem;
   }
-  @include respond(tablets) {
-    padding: 2rem;
+
+  &__wrap {
+    @media only screen and (max-width: 1024px) {
+      width: 100%;
+    }
   }
 
   &__logo {
     display: inline-flex;
 
+    @media only screen and (min-width: 1025px) {
+      width: 25rem;
+    }
+    @media only screen and (min-width: 1367px) {
+      width: 30rem;
+    }
+
     @include respond(mobile) {
-      width: max-content;
+      width: 70%;
+      margin-right: 10px;
     }
 
     img {
-      @include respond(mobile) {
+      @media only screen and (min-width: 1025px) {
         width: 100%;
         height: auto;
-        object-fit: cover;
       }
+      @include respond(mobile) {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+  }
+
+  &__navbar,
+  &__list {
+    @include respond(smallScreens) {
+      flex-direction: column;
+      align-items: flex-start;
     }
   }
 
   &__navbar {
-    &--mobile {
-      @include respond(smallScreens) {
-        opacity: 0;
-        visibility: visible;
+    transition: all 400ms ease-in-out;
+    @include respond(smallScreens) {
+      &--disable {
         height: 0;
+        visibility: hidden;
+        opacity: 0;
       }
     }
   }
 
-  &__navbar--mobile .button,
-  &__navbar--mobile &__list {
-    display: none;
+  &__navbar--disable &__list {
+    @include respond(smallScreens) {
+      height: 0;
+      visibility: hidden;
+      opacity: 0;
+    }
   }
 
+  &__navbar--disable .button--dark {
+    @include respond(smallScreens) {
+      display: none;
+    }
+  }
+
+  &__item:has(&__dropdownList--active) {
+    @include respond(smallScreens) {
+      transition: all 200ms ease-in-out;
+      margin-bottom: 11rem;
+    }
+  }
   &__item {
     color: $color-grey-dark-1;
     font-family: $font-kufam;
@@ -64,6 +102,7 @@
 
     @include respond(laptops) {
       padding: 1.5rem 1rem;
+      font-size: 1.8rem;
     }
 
     &:last-child {
@@ -71,6 +110,10 @@
 
       @include respond(laptops) {
         margin-right: 2.8rem;
+      }
+
+      @include respond(smallScreens) {
+        margin-right: 0;
       }
     }
   }
@@ -103,9 +146,6 @@
     }
   }
   &__menu {
-    position: absolute;
-    top: 2.5rem;
-    right: 2.5rem;
     width: 66px;
     height: 66px;
 
@@ -115,10 +155,49 @@
     background-color: $color-primary;
     border: none;
     border-radius: $default-border-radius;
+    cursor: pointer;
+
+    @include respond(mobile) {
+      width: 55px;
+      height: 55px;
+    }
+
+    &--active {
+      background-color: $color-secondary;
+    }
+
+    &--active span {
+      background-color: $color-primary !important;
+
+      &::after,
+      &::before {
+        background-color: $color-primary !important;
+      }
+    }
+
     span {
-      width: 1px;
-      height: 1px;
-      color: $color-white;
+      position: relative;
+      width: 20px;
+      height: 3px;
+      border-radius: $default-border-radius;
+      background-color: $color-white;
+
+      &::after,
+      &::before {
+        content: "";
+        width: 20px;
+        height: 3px;
+        border-radius: $default-border-radius;
+        background-color: $color-white;
+        position: absolute;
+      }
+
+      &::after {
+        top: 7px;
+      }
+      &::before {
+        top: -7px;
+      }
     }
     @media only screen and (min-width: 1025px) {
       display: none;

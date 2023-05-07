@@ -6,15 +6,19 @@ const HeaderNavbar = () => {
   const dropDownList = useRef();
 
   const MouseEnterHandler = () => {
-    dropDownList.current.classList.add("header__dropdownList--active");
+    if (window.innerWidth > 1024) {
+      dropDownList.current.classList.add("header__dropdownList--active");
+    }
   };
 
   const MouseLeaveHandler = () => {
-    dropDownList.current.classList.remove("header__dropdownList--active");
+    if (window.innerWidth > 1024) {
+      dropDownList.current.classList.remove("header__dropdownList--active");
+    }
   };
 
   return (
-    <nav className="header__navbar header__navbar--mobile u-d-flex-a-center">
+    <nav className="header__navbar header__navbar--disable u-d-flex-a-center">
       <ul className="header__list u-d-flex-a-center">
         <li className="header__item">
           <a href="/" className="header__link header__link--active">
@@ -34,6 +38,13 @@ const HeaderNavbar = () => {
         <li
           onMouseEnter={MouseEnterHandler}
           onMouseLeave={MouseLeaveHandler}
+          onClick={() => {
+            if (window.innerWidth <= 1024) {
+              dropDownList.current.classList.toggle(
+                "header__dropdownList--active"
+              );
+            }
+          }}
           className="header__item header__item--hover"
         >
           Pages <Image src={ArrowDown} alt="Arrow" />

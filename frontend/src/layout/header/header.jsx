@@ -6,9 +6,6 @@ const Header = () => {
     <header className="header u-d-flex-a-center">
       <HeaderLogo />
       <HeaderNavbar />
-      <div className="header__menu">
-        <span></span>
-      </div>
     </header>
   );
 };
