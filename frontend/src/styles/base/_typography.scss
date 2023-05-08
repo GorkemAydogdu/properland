@@ -1,5 +1,9 @@
 .heading-primary {
   font-size: 6.5rem;
+
+  @include respond(laptops) {
+    font-size: 6rem;
+  }
 }
 
 .heading-secondary {
@@ -14,15 +18,43 @@
 }
 
 .heading-tertiary {
+  padding-left: 10px;
+  padding-right: 9px;
+  margin-bottom: 1.5rem;
+  display: inline-block;
+  border-left: 2px solid $color-black;
+  border-right: 2px solid $color-black;
+}
+
+.heading-tertiary,
+.heading-count {
   font-size: 2rem;
   font-family: $font-source-sans-3;
   font-weight: 400;
-  line-height: $line-height-secondary;
-  letter-spacing: 30%;
+  line-height: 1;
+  letter-spacing: 0.3em;
+}
+.heading-count {
+  color: $color-secondary;
 }
 
 .heading-primary,
 .heading-secondary,
 .heading-tertiary {
   color: $color-primary;
+}
+
+.description {
+  font-size: 2rem;
+  font-family: $font-source-sans-3;
+  line-height: $line-height-primary;
+  color: $color-link;
+
+  @include respond(tablets) {
+    font-size: 2.4rem;
+  }
+
+  @include respond(mobile) {
+    font-size: 2.8rem;
+  }
 }

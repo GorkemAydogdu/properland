@@ -1,0 +1,76 @@
+.about {
+  margin: 10rem 0;
+  display: flex;
+  gap: 3.8rem;
+
+  &__details {
+    background-color: $color-grey-light-1;
+    width: 65%;
+    padding: 6.5rem 7.2rem;
+    border-radius: $default-border-radius;
+
+    & > .description {
+      margin: 2.5rem 0;
+    }
+  }
+  &__points {
+    display: flex;
+  }
+  &__pointItem {
+    gap: 1.2rem;
+    &:not(:last-child) {
+      margin-right: 3rem;
+    }
+  }
+  &__dotWrap {
+    width: 26px;
+    height: 26px;
+    border-radius: 100px;
+    background-color: $color-grey-dark-2;
+  }
+  &__dot {
+    width: 8px;
+    height: 8px;
+    background-color: $color-primary;
+    border-radius: 100px;
+  }
+  &__text {
+    font-family: $font-source-sans-3;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: $line-height-secondary;
+    color: $color-content;
+  }
+  &__image {
+    width: 35%;
+    background: url("https://assets.website-files.com/6304f6a27b2b4e7a7062ee94/634d2bb505fc1002209b32d9_intro-video-bg.jpg")
+      no-repeat center/100%;
+    border-radius: $default-border-radius;
+  }
+  &__firstCircle {
+    width: 153px;
+    height: 153px;
+    border: 1px solid rgba(255, 255, 255, 0.42);
+    background-color: rgba(255, 255, 255, 0.08);
+    border-radius: 50%;
+  }
+  &__secondCircle {
+    width: 123px;
+    height: 123px;
+    border: 1px solid $color-white;
+    background-color: rgba(255, 255, 255, 0.17);
+    border-radius: 50%;
+  }
+  &__playButton {
+    user-select: none;
+    width: 93px;
+    height: 93px;
+    background-color: $color-white;
+    border-radius: 50%;
+    transition: all 200ms ease;
+
+    &:hover {
+      background-color: $color-secondary;
+    }
+  }
+}

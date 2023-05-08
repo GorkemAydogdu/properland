@@ -1,13 +1,7 @@
 import Head from "next/head";
-import Header from "@/layout/header/header";
-import Agency from "@/components/agency";
-import Title from "@/components/title";
-import ArrowRight from "@/assets/ArrowRight.svg";
 import HouseThumb from "@/assets/HouseThumb.png";
-import LeftParcitle from "@/assets/LeftParticle.png";
-import RightParcitle from "@/assets/RightParticle.png";
-import Image from "next/image";
-
+import Banner from "@/components/banner";
+import About from "@/components/about";
 export default function Home() {
   return (
     <>
@@ -18,45 +12,16 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <>
-        <section className="banner">
-          <div className="container">
-            <Header />
-            <section className="banner__content">
-              <div className="banner__text">
-                <Agency>Real Estate Agency</Agency>
-                <Title>Find the perfect place to Live with your family</Title>
-                <p className="description">
-                  Distinctively re-engineer revolutionary meta-services and
-                  premium architectures. Intrinsically incubate.
-                </p>
-                <a href="/" className="button button--white">
-                  Explore Property <Image src={ArrowRight} alt="Arrow Right" />
-                </a>
-              </div>
-              <div className="banner__ImageWrap">
-                <Image className="banner__thumb" src={HouseThumb} alt="House" />
-              </div>
-            </section>
-            <Image
-              className="particle particle--left"
-              src={LeftParcitle}
-              alt="Left Particle"
-            />
-            <Image
-              className="particle particle--right"
-              src={RightParcitle}
-              alt="Right Particle"
-            />
-          </div>
-        </section>
-        <div className="container">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas veniam
-          libero nulla commodi voluptates ipsum repellendus itaque accusantium
-          laboriosam officiis. Corrupti aliquid omnis expedita aperiam natus
-          repellendus atque assumenda ad doloremque velit quae quaerat
-          aspernatur dignissimos magnam sed a, at odit numquam et cum? Alias
-          iusto saepe distinctio ipsum veritatis?
-        </div>
+        <Banner
+          agency="Real Estate Agency"
+          title="Find the perfect place to Live with your family"
+          image={HouseThumb}
+          description="Distinctively re-engineer revolutionary meta-services and
+          premium architectures. Intrinsically incubate."
+          button="Explore Property"
+          key={Math.random()}
+        />
+        <About />
       </>
     </>
   );
