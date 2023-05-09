@@ -88,6 +88,13 @@
       transition: all 200ms ease-in-out;
       margin-bottom: 11rem;
     }
+    @include respond(tablets) {
+      margin-bottom: 13rem;
+    }
+
+    @include respond(mobile) {
+      margin-bottom: 14rem;
+    }
   }
   &__item {
     color: $color-grey-dark-1;
@@ -103,6 +110,13 @@
     @include respond(laptops) {
       padding: 1.5rem 1rem;
       font-size: 1.8rem;
+    }
+    @include respond(tablets) {
+      font-size: 2.4rem;
+    }
+
+    @include respond(mobile) {
+      font-size: 2.8rem;
     }
 
     &:last-child {

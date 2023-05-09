@@ -1,8 +1,9 @@
 .container {
-  max-width: 83.5vw;
+  max-width: 1366px;
   margin: auto;
 
-  @include respond(smallScreens) {
-    max-width: 91.5vw;
+  @include respond(laptops) {
+    max-width: 100%;
+    padding: 0 5rem;
   }
 }

@@ -5,8 +5,8 @@ import Image from "next/image";
 
 const About = () => {
   return (
-    <Container>
-      <section className="about">
+    <section className="about">
+      <Container>
         <section className="about__details">
           <h3 className="heading-tertiary u-text-uppercase">
             <span className="heading-count">01</span> Properland Intro
@@ -50,8 +50,8 @@ const About = () => {
             </div>
           </div>
         </section>
-      </section>
-    </Container>
+      </Container>
+    </section>
   );
 };
 
