@@ -2,6 +2,7 @@ import Head from "next/head";
 import HouseThumb from "@/assets/HouseThumb.png";
 import Banner from "@/components/banner";
 import About from "@/components/about";
+import Property from "@/components/property";
 export default function Home() {
   return (
     <>
@@ -22,6 +23,7 @@ export default function Home() {
           key={Math.random()}
         />
         <About />
+        <Property />
       </>
     </>
   );
