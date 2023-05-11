@@ -33,7 +33,7 @@ const Property = () => {
             </div>
             <div className="property__name-wrap">
               <a href="/" className="property__name">
-                Comefortable Appartment
+                Modern Loft in Land River
               </a>
               <div className="property__location">
                 <Image src={Location} alt="Location" />
