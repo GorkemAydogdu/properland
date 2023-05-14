@@ -3,6 +3,7 @@ import HouseThumb from "@/assets/HouseThumb.png";
 import Banner from "@/components/banner";
 import About from "@/components/about";
 import Property from "@/components/property";
+import WhyChoose from "@/components/whyChoose";
 export default function Home() {
   return (
     <>
@@ -24,6 +25,7 @@ export default function Home() {
         />
         <About />
         <Property />
+        <WhyChoose />
       </>
     </>
   );
