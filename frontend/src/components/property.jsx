@@ -15,7 +15,7 @@ const Property = () => {
     <section className="property">
       <Container>
         <div className="property__text u-text-center">
-          <h3 className="heading-tertiary u-text-uppercase">
+          <h3 className="heading-quaternary u-text-uppercase">
             <span className="heading-count">02</span> Featured Properties
           </h3>
           <h2 className="heading-secondary">

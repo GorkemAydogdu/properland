@@ -8,7 +8,7 @@ const About = () => {
     <section className="about">
       <Container>
         <section className="about__details">
-          <h3 className="heading-tertiary u-text-uppercase">
+          <h3 className="heading-quaternary u-text-uppercase">
             <span className="heading-count">01</span> Properland Intro
           </h3>
           <h2 className="heading-secondary">
