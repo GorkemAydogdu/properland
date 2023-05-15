@@ -1,20 +1,14 @@
 import React from "react";
 
-import Image from "next/image";
-import BudgetFriendly from "@/assets/budgetFriendly.png";
-import Commission from "@/assets/commission.png";
-import Insurance from "@/assets/insurance.png";
-import Location from "@/assets/location.png";
-import Trusted from "@/assets/trusted.png";
 import Container from "./container";
 const WhyChoose = () => {
   return (
     <section className="whyChoose">
       <Container>
         <div className="whyChoose__text u-text-center">
-          <h3 className="heading-quaternary u-text-uppercase">
+          <h4 className="heading-quaternary u-text-uppercase">
             <span className="heading-count">03</span> Why Choose
-          </h3>
+          </h4>
           <h2 className="heading-secondary">
             Why Choose Our Properties Of Real Estate Industries
           </h2>

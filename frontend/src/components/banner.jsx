@@ -6,7 +6,7 @@ import Container from "./container";
 
 import LeftParcitle from "@/assets/LeftParticle.png";
 import RightParcitle from "@/assets/RightParticle.png";
-import ArrowRight from "@/assets/ArrowRight.svg";
+import ArrowRight from "@/assets/ArrowRightYellow.svg";
 
 import Image from "next/image";
 
@@ -23,7 +23,7 @@ const Banner = ({ agency, title, image, description, button }) => {
               <p className="description">{description}</p>
             )}
             {button !== undefined && (
-              <a href="/" className="button button--white">
+              <a href="/" className="button button--white button--hover">
                 {button} <Image src={ArrowRight} alt="Arrow Right" />
               </a>
             )}

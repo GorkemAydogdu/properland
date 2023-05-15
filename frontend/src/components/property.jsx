@@ -8,16 +8,16 @@ import Car from "@/assets/Car.svg";
 import Ruler from "@/assets/Ruler.svg";
 import Image from "next/image";
 
-import ArrowRight from "@/assets/ArrowRight.svg";
+import ArrowRight from "@/assets/ArrowRightYellow.svg";
 
 const Property = () => {
   return (
     <section className="property">
       <Container>
         <div className="property__text u-text-center">
-          <h3 className="heading-quaternary u-text-uppercase">
+          <h4 className="heading-quaternary u-text-uppercase">
             <span className="heading-count">02</span> Featured Properties
-          </h3>
+          </h4>
           <h2 className="heading-secondary">
             Properties for sale in your favorite area
           </h2>
@@ -29,7 +29,7 @@ const Property = () => {
             </a>
             <div className="property__price-wrap">
               <span className="property__price">$3500/Mo</span>
-              <button className="property__status">For Sale</button>
+              <button className="button button--sale">For Sale</button>
             </div>
             <div className="property__name-wrap">
               <a href="/" className="property__name">
@@ -69,7 +69,7 @@ const Property = () => {
             </a>
             <div className="property__price-wrap">
               <span className="property__price">$3500/Mo</span>
-              <button className="property__status">For Sale</button>
+              <button className="button button--sale">For Sale</button>
             </div>
             <div className="property__name-wrap">
               <a href="/" className="property__name">
@@ -109,7 +109,7 @@ const Property = () => {
             </a>
             <div className="property__price-wrap">
               <span className="property__price">$3500/Mo</span>
-              <button className="property__status">For Sale</button>
+              <button className="button button--sale">For Sale</button>
             </div>
             <div className="property__name-wrap">
               <a href="/" className="property__name">
@@ -149,7 +149,7 @@ const Property = () => {
             </a>
             <div className="property__price-wrap">
               <span className="property__price">$3500/Mo</span>
-              <button className="property__status">For Sale</button>
+              <button className="button button--sale">For Sale</button>
             </div>
             <div className="property__name-wrap">
               <a href="/" className="property__name">
@@ -184,7 +184,7 @@ const Property = () => {
             </div>
           </div>
         </div>
-        <a href="/" className="button button--white">
+        <a href="/" className="button button--white button--hover">
           Touch With Us
           <Image src={ArrowRight} alt="Arrow Right" />
         </a>

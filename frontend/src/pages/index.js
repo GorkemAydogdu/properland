@@ -1,9 +1,10 @@
 import Head from "next/head";
 import HouseThumb from "@/assets/HouseThumb.png";
 import Banner from "@/components/banner";
-import About from "@/components/about";
+import Intro from "@/components/intro";
 import Property from "@/components/property";
 import WhyChoose from "@/components/whyChoose";
+import About from "@/components/about";
 export default function Home() {
   return (
     <>
@@ -23,9 +24,10 @@ export default function Home() {
           button="Explore Property"
           key={Math.random()}
         />
-        <About />
+        <Intro />
         <Property />
         <WhyChoose />
+        <About />
       </>
     </>
   );

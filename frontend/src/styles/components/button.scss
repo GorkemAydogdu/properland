@@ -2,8 +2,8 @@
   font-size: 2rem;
   font-family: $font-kufam;
   font-weight: 500;
+  border: none;
   border-radius: $default-border-radius;
-  padding: 2rem 4rem;
   width: max-content;
 
   display: flex;
@@ -20,8 +20,55 @@
     }
   }
 
+  &--white,
+  &--more {
+    gap: 1.5rem;
+  }
+
   &--white {
+    padding: 2rem 4rem;
+
     background-color: $color-white;
     color: $color-primary;
+    @include respond(tablets) {
+      padding: 3.5rem 5.5rem;
+      font-size: 2.4rem;
+    }
+
+    @include respond(mobile) {
+      padding: 4.5rem 6.5rem;
+      font-size: 2.8rem;
+    }
+  }
+
+  &--hover {
+    img {
+      transition: all 200ms ease;
+    }
+
+    &:hover img {
+      transform: translateX(7px);
+    }
+  }
+
+  &--sale,
+  &--more {
+    background-color: $color-secondary;
+    color: $color-primary;
+  }
+
+  &--sale {
+    padding: 1.6rem 3.3rem;
+
+    @include respond(laptops) {
+      padding: 1.3rem 3rem;
+    }
+    @include respond(tablets) {
+      padding: 2.1rem 3.8rem;
+      font-size: 3rem;
+    }
+  }
+  &--more {
+    padding: 2.5rem 2.3rem;
   }
 }
