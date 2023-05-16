@@ -5,6 +5,8 @@ import Intro from "@/components/intro";
 import Property from "@/components/property";
 import WhyChoose from "@/components/whyChoose";
 import About from "@/components/about";
+import Service from "@/components/service";
+
 export default function Home() {
   return (
     <>
@@ -28,6 +30,7 @@ export default function Home() {
         <Property />
         <WhyChoose />
         <About />
+        <Service />
       </>
     </>
   );

@@ -1,0 +1,54 @@
+.service {
+  padding: 9rem 0;
+
+  & .container {
+    display: flex;
+    flex-direction: column;
+  }
+  &__text {
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
+    margin-top: 4.5rem;
+  }
+  &__row {
+    display: flex;
+    gap: 4.5rem;
+    &:not(:first-child) {
+      margin: auto;
+    }
+  }
+  &__row:last-child &__item {
+    width: calc(100vw / 5);
+  }
+  &__item {
+    width: calc(100vw / 3);
+
+    flex-direction: column;
+
+    & .description {
+      margin-top: 1.2rem;
+      color: $color-content;
+      line-height: 1.5;
+    }
+  }
+  &__image {
+    background: linear-gradient(180deg, #ffe5bb, $color-white);
+    border-radius: 70px 70px 0 0;
+    width: 135px;
+    height: 180px;
+
+    position: relative;
+  }
+  &__icon {
+    position: absolute;
+    background-color: $color-white;
+    width: 52px;
+    height: 52px;
+    border-radius: 100px;
+
+    top: 30px;
+  }
+}
