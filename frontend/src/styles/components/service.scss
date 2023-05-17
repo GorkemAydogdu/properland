@@ -6,6 +6,8 @@
     flex-direction: column;
   }
   &__text {
+    width: max-content;
+    margin: auto;
   }
   &__content {
     display: flex;
@@ -16,17 +18,40 @@
   &__row {
     display: flex;
     gap: 4.5rem;
+
+    @include respond(smallScreens) {
+      flex-wrap: wrap;
+      row-gap: 4.5rem;
+      column-gap: 0;
+      justify-content: space-between;
+    }
+
+    @include respond(tablets) {
+      flex-direction: column;
+    }
+
     &:not(:first-child) {
       margin: auto;
     }
   }
   &__row:last-child &__item {
     width: calc(100vw / 5);
+
+    @include respond(smallScreens) {
+      width: 48%;
+    }
   }
   &__item {
     width: calc(100vw / 3);
 
     flex-direction: column;
+
+    @include respond(smallScreens) {
+      width: 48%;
+    }
+    @include respond(tablets) {
+      width: 100% !important;
+    }
 
     & .description {
       margin-top: 1.2rem;
