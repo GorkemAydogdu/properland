@@ -14,6 +14,12 @@ const Testimonial = () => {
       gap: "4rem",
       pagination: false,
       arrows: false,
+
+      breakpoints: {
+        1024: {
+          perPage: 1,
+        },
+      },
     });
 
     splide.mount();

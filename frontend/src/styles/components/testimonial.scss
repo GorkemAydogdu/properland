@@ -44,6 +44,16 @@
   }
   &__item {
     width: calc(100% / 2.75) !important;
+
+    @include respond(laptops) {
+      width: calc(100% / 2.25) !important;
+    }
+    @include respond(smallScreens) {
+      width: calc(100% / 1.5) !important;
+    }
+    @include respond(tablets) {
+      width: 100% !important;
+    }
   }
   &__message {
     background: linear-gradient(225deg, #ecc8b7, #f4dbce);
