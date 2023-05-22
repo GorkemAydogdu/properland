@@ -7,6 +7,7 @@ import WhyChoose from "@/components/whyChoose";
 import About from "@/components/about";
 import Service from "@/components/service";
 import Testimonial from "@/components/testimonial";
+import Counter from "@/components/counter";
 
 export default function Home() {
   return (
@@ -33,6 +34,7 @@ export default function Home() {
         <About />
         <Service />
         <Testimonial />
+        <Counter />
       </>
     </>
   );

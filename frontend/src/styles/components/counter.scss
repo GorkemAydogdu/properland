@@ -1,0 +1,26 @@
+.counter {
+  margin-bottom: 10rem;
+  & .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 7rem 0;
+    border-bottom: 1px solid #e4e4e4;
+
+    @include respond(tablets) {
+      flex-wrap: wrap;
+      row-gap: 3rem;
+    }
+  }
+  &__item {
+    flex-direction: column;
+    width: 25%;
+
+    @include respond(tablets) {
+      width: 50%;
+      flex-wrap: wrap;
+    }
+    @include respond(mobile) {
+      width: 100%;
+    }
+  }
+}
