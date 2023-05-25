@@ -1,0 +1,63 @@
+.neighborhoods {
+  &__text {
+  }
+
+  &__content {
+    display: flex;
+    gap: 2.5rem;
+    margin-top: 4rem;
+
+    @include respond(smallScreens) {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__card {
+    width: calc(100% / 4);
+    position: relative;
+
+    @include respond(smallScreens) {
+      width: calc(100% / 2 - 1.25rem);
+    }
+    @include respond(mobile) {
+      width: calc(100%);
+    }
+  }
+
+  &__image--wrap {
+    height: 40rem;
+
+    @include respond(mobile) {
+      height: 50rem;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: $default-border-radius;
+    }
+  }
+
+  &__details {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding-left: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  &__name {
+    color: $color-white;
+  }
+  &__property {
+    font-family: $font-source-sans-3;
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: $line-height-primary;
+
+    color: $color-secondary;
+  }
+}
