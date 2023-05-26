@@ -9,6 +9,7 @@ import Service from "@/components/service";
 import Testimonial from "@/components/testimonial";
 import Counter from "@/components/counter";
 import Neighborhoods from "@/components/neighborhoods";
+import Brands from "@/components/brands";
 
 export default function Home() {
   return (
@@ -37,6 +38,7 @@ export default function Home() {
         <Testimonial />
         <Counter />
         <Neighborhoods />
+        <Brands />
       </>
     </>
   );

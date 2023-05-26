@@ -4,6 +4,6 @@
 
   @include respond(laptops) {
     max-width: 100%;
-    padding: 0 5rem;
+    margin: 0 5rem;
   }
 }
