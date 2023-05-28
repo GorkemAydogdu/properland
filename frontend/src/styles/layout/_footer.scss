@@ -1,0 +1,109 @@
+.footer {
+  padding: 9rem 0;
+  &__top {
+    display: flex;
+    gap: 13rem;
+    border-top: 1px solid #e4e4e4;
+    border-bottom: 1px solid #e4e4e4;
+
+    @include respond(laptops) {
+      gap: 8rem;
+    }
+
+    @include respond(smallScreens) {
+      gap: 6rem;
+    }
+
+    @include respond(smallScreens) {
+      flex-direction: column;
+    }
+  }
+
+  &__logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-right: 1px solid #e4e4e4;
+    padding-right: 13rem;
+    gap: 2.5rem;
+
+    @include respond(laptops) {
+      padding-right: 8rem;
+    }
+    @include respond(smallScreens) {
+      border-right: none;
+      padding: 6rem 0 0;
+    }
+    @include respond(mobile) {
+      & > img {
+        width: 220px;
+      }
+    }
+  }
+  &__social {
+    display: flex;
+    gap: 3rem;
+  }
+
+  &__mailBox {
+    max-width: 60rem;
+    padding: 8rem 0;
+
+    @include respond(laptops) {
+      max-width: 55rem;
+    }
+
+    @include respond(smallScreens) {
+      max-width: 90rem;
+      padding: 5rem 0;
+    }
+
+    @include respond(mobile) {
+      h2 {
+        font-size: 4rem;
+      }
+    }
+  }
+  &__subscribe {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    margin-top: 1.5rem;
+
+    @include respond(tablets) {
+      flex-direction: column;
+
+      a {
+        width: 100%;
+        justify-content: center;
+      }
+    }
+  }
+  &__input {
+    width: 35rem;
+    border-radius: $default-border-radius;
+    border: 1px solid silver;
+    padding: 2rem 3rem;
+
+    font-family: $font-kufam;
+    font-size: 2rem;
+    font-weight: 500;
+
+    @include respond(laptops) {
+      width: 30rem;
+    }
+
+    @include respond(smallScreens) {
+      width: 45rem;
+    }
+
+    @include respond(tablets) {
+      width: 100%;
+    }
+
+    &:focus {
+      border-color: #3898ec;
+      outline: 0;
+    }
+  }
+}
