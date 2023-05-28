@@ -4,7 +4,7 @@ import Container from "./container";
 
 const Counter = () => {
   return (
-    <div className="counter">
+    <section className="counter">
       <Container>
         <div className="counter__item u-d-flex-a-center">
           <span className="heading-secondary">56,180</span>
@@ -23,7 +23,7 @@ const Counter = () => {
           <p className="description">Price Reduce</p>
         </div>
       </Container>
-    </div>
+    </section>
   );
 };
 

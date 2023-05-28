@@ -6,7 +6,7 @@ import ArrowRight from "@/assets/ArrowRightYellow.svg";
 
 const Brands = () => {
   return (
-    <div className="brands">
+    <section className="brands">
       <Container>
         <h3 className="heading-tertiary u-text-center">
           More than 50+ Brands Trusted World Wide
@@ -76,7 +76,7 @@ const Brands = () => {
           <Image src={ArrowRight} alt="" />
         </a>
       </Container>
-    </div>
+    </section>
   );
 };
 

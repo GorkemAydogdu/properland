@@ -3,7 +3,7 @@ import Container from "./container";
 
 const Neighborhoods = () => {
   return (
-    <div className="neighborhoods">
+    <section className="neighborhoods">
       <Container>
         <div className="neighborhoods__text u-text-center">
           <h4 className="heading-quaternary u-text-uppercase">
@@ -70,7 +70,7 @@ const Neighborhoods = () => {
           </a>
         </div>
       </Container>
-    </div>
+    </section>
   );
 };
 

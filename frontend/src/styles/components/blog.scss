@@ -1,0 +1,45 @@
+.blog {
+  background-color: $color-grey-light-2;
+  padding: 9rem 0;
+
+  &__content {
+    flex-direction: column;
+    margin-top: 5rem;
+    gap: 5rem;
+  }
+  &__item {
+  }
+
+  &__image {
+    display: flex;
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      border-radius: $default-border-radius;
+    }
+  }
+
+  &__text {
+    margin: 4.5rem auto 0;
+    max-width: 65rem;
+  }
+  &__title {
+    display: inline-block;
+    font-family: $font-kufam;
+    font-weight: 500;
+    font-size: 3rem;
+    line-height: $line-height-primary;
+
+    color: $color-primary;
+    margin-top: 2rem;
+    transition: all 200ms ease;
+
+    &:hover {
+      color: $color-link;
+    }
+  }
+  &__line {
+    margin: 0 2rem;
+  }
+}

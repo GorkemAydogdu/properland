@@ -6,7 +6,7 @@ import Image from "next/image";
 import ArrowRight from "@/assets/ArrowRightDark.svg";
 const About = () => {
   return (
-    <div className="about">
+    <section className="about">
       <Container>
         <div className="about__text">
           <h4 className="heading-quaternary u-text-uppercase">
@@ -30,7 +30,7 @@ const About = () => {
           </a>
         </div>
       </Container>
-    </div>
+    </section>
   );
 };
 

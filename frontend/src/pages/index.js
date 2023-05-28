@@ -10,6 +10,7 @@ import Testimonial from "@/components/testimonial";
 import Counter from "@/components/counter";
 import Neighborhoods from "@/components/neighborhoods";
 import Brands from "@/components/brands";
+import Blog from "@/components/blog";
 
 export default function Home() {
   return (
@@ -39,6 +40,7 @@ export default function Home() {
         <Counter />
         <Neighborhoods />
         <Brands />
+        <Blog />
       </>
     </>
   );
