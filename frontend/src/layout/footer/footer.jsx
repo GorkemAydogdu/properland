@@ -50,7 +50,7 @@ const Footer = () => {
               level overviews. approaches lverall value proposition. Organically
               grow the holistic world view of disruptive.
             </p>
-            <div className="footer__subscribe">
+            <div className="footer__subscribe u-d-flex-a-center">
               <input
                 type="email"
                 placeholder="your email address here"
