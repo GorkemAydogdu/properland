@@ -2,6 +2,16 @@
   background-color: $color-grey-light-2;
   padding: 9rem 0;
 
+  @include respond(laptops) {
+    padding: 8rem 0;
+  }
+  @include respond(smallScreens) {
+    padding: 7rem 0;
+  }
+  @include respond(tablets) {
+    padding: 6rem 0;
+  }
+
   &__content {
     flex-direction: column;
     margin-top: 5rem;

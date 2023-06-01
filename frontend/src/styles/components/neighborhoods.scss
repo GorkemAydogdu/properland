@@ -1,5 +1,6 @@
 .neighborhoods {
-  &__text {
+  @media only screen and (min-width: 1367px) {
+    padding: 0 4rem;
   }
 
   &__content {

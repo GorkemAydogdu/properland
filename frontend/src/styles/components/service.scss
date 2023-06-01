@@ -1,6 +1,15 @@
 .service {
-  padding: 9rem 0;
+  padding: 9rem 4rem;
 
+  @include respond(laptops) {
+    padding: 8rem 0;
+  }
+  @include respond(smallScreens) {
+    padding: 7rem 0;
+  }
+  @include respond(tablets) {
+    padding: 6rem 0;
+  }
   & .container {
     display: flex;
     flex-direction: column;
