@@ -7,6 +7,7 @@ import Bed from "@/assets/Bed.svg";
 import Car from "@/assets/Car.svg";
 import Ruler from "@/assets/Ruler.svg";
 import Image from "next/image";
+import Title from "./title";
 
 import ArrowRight from "@/assets/ArrowRightYellow.svg";
 
@@ -14,14 +15,12 @@ const Property = () => {
   return (
     <section className="property">
       <Container>
-        <div className="property__text u-text-center">
-          <h4 className="heading-quaternary u-text-uppercase">
-            <span className="heading-count">02</span> Featured Properties
-          </h4>
-          <h2 className="heading-secondary">
-            Properties for sale in your favorite area
-          </h2>
-        </div>
+        <Title
+          count="02"
+          subTitle="Featured Properties"
+          title="Properties for sale in your favorite area"
+          className="property__text u-text-center"
+        />
         <div className="property__content">
           <div className="property__item">
             <a href="/" className="property__image">

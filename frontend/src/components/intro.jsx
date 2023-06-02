@@ -2,18 +2,18 @@ import React from "react";
 import Container from "./container";
 import PlayButton from "@/assets/PlayButton.svg";
 import Image from "next/image";
+import Title from "./title";
 
 const Intro = () => {
   return (
     <section className="intro">
       <Container>
         <section className="intro__details">
-          <h4 className="heading-quaternary u-text-uppercase">
-            <span className="heading-count">01</span> Properland Intro
-          </h4>
-          <h2 className="heading-secondary">
-            Buying & Selling Property In An Easy Way
-          </h2>
+          <Title
+            count="01"
+            subTitle="Properland Intro"
+            title="Buying & Selling Property In An Easy Way"
+          />
           <p className="description">
             Distinctively re-engineer revolutionary meta-services and premium At
             vero eos et accusamus et iusto odio dignissimos ducimus qui

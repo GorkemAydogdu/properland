@@ -1,16 +1,17 @@
 import React from "react";
 import Container from "./container";
+import Title from "./title";
 
 const Blog = () => {
   return (
     <section className="blog">
       <Container>
-        <div className="u-text-center">
-          <h4 className="heading-quaternary u-text-uppercase">
-            <span className="heading-count">07</span> Blog
-          </h4>
-          <h2 className="heading-secondary">Latest Articles</h2>
-        </div>
+        <Title
+          count="07"
+          subTitle="Blog"
+          title="Latest Articles"
+          className="u-text-center"
+        />
         <div className="blog__content u-d-flex-a-center">
           <div className="blog__item">
             <a className="blog__image" href="/">

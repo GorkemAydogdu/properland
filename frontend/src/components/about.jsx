@@ -1,6 +1,6 @@
 import React from "react";
 import Container from "./container";
-
+import Title from "./title";
 import Image from "next/image";
 
 import ArrowRight from "@/assets/ArrowRightDark.svg";
@@ -9,12 +9,11 @@ const About = () => {
     <section className="about">
       <Container>
         <div className="about__text">
-          <h4 className="heading-quaternary u-text-uppercase">
-            <span className="heading-count">04</span> About Us
-          </h4>
-          <h2 className="heading-secondary">
-            42+ years of helping you find the right Propertys
-          </h2>
+          <Title
+            count="04"
+            subTitle="About Us"
+            title="42+ years of helping you find the right Propertys"
+          />
           <p className="description">
             Distinctively re-engineer revolutionary meta-services and premium At
             vero eos et accusamus et iusto

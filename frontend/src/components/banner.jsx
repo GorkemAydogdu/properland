@@ -1,7 +1,6 @@
 import React from "react";
 import Header from "@/layout/header/header";
 import Agency from "@/components/agency";
-import Title from "@/components/title";
 import Container from "./container";
 
 import LeftParcitle from "@/assets/LeftParticle.png";
@@ -10,15 +9,15 @@ import ArrowRight from "@/assets/ArrowRightYellow.svg";
 
 import Image from "next/image";
 
-const Banner = ({ agency, title, image, description, button }) => {
+const Banner = ({ agency, title, image, description, button, className }) => {
   return (
-    <section className="banner">
+    <section className={`banner ${className === undefined ? "" : className}`}>
       <Container>
         <Header />
         <section className="banner__content">
           <div className="banner__text">
             <Agency>{agency}</Agency>
-            <Title>{title}</Title>
+            <h1 className="heading-primary">{title}</h1>
             {description !== undefined && (
               <p className="description">{description}</p>
             )}
@@ -29,7 +28,7 @@ const Banner = ({ agency, title, image, description, button }) => {
             )}
           </div>
           <div className="banner__ImageWrap">
-            <Image className="banner__thumb" src={image} alt="" />
+            <img className="banner__thumb" src={image} alt="" />
           </div>
         </section>
         <Image

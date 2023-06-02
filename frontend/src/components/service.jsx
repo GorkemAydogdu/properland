@@ -1,16 +1,18 @@
 import React from "react";
 import Container from "./container";
+import Title from "./title";
 
 const Service = () => {
   return (
     <section className="service">
       <Container>
-        <div className="service__text u-text-center">
-          <h4 className="heading-quaternary u-text-uppercase">
-            <span className="heading-count">05</span> Services
-          </h4>
-          <h2 className="heading-secondary">See How Can Help</h2>
-        </div>
+        <Title
+          count="05"
+          subTitle="Services"
+          title="See How Can Help"
+          className="service__text u-text-center"
+        />
+
         <div className="service__content">
           <div className="service__row">
             <div className="service__item u-d-flex-a-center">

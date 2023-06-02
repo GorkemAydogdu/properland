@@ -1,5 +1,6 @@
 import React, { useRef } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import ArrowDown from "@/assets/ArrowDown.svg";
 
 const HeaderNavbar = () => {
@@ -26,9 +27,9 @@ const HeaderNavbar = () => {
           </a>
         </li>
         <li className="header__item">
-          <a href="/" className="header__link">
+          <Link href="/about-us" className="header__link">
             About
-          </a>
+          </Link>
         </li>
         <li className="header__item">
           <a href="/" className="header__link">

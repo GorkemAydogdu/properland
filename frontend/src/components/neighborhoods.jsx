@@ -1,16 +1,18 @@
 import React from "react";
+import Title from "./title";
 import Container from "./container";
 
 const Neighborhoods = () => {
   return (
     <section className="neighborhoods">
       <Container>
-        <div className="neighborhoods__text u-text-center">
-          <h4 className="heading-quaternary u-text-uppercase">
-            <span className="heading-count">06</span> Neighborhoods
-          </h4>
-          <h2 className="heading-secondary">Discover The Neighborhoods</h2>
-        </div>
+        <Title
+          count="06"
+          subTitle="Neighborhoods"
+          title="Discover The Neighborhoods"
+          className="neighborhoods__text u-text-center"
+        />
+
         <div className="neighborhoods__content">
           <a href="/" className="neighborhoods__card">
             <div className="neighborhoods__image--wrap">

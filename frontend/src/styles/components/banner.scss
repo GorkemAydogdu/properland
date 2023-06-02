@@ -14,9 +14,13 @@
     padding: 6rem 0;
   }
 
+  &__alternative &__thumb {
+    width: 68%;
+  }
+
   &__content {
     display: flex;
-    margin: 14rem 0;
+    margin: 14rem 0 0;
 
     @include respond(laptops) {
       margin: 10rem 0;

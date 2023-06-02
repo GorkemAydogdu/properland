@@ -1,18 +1,17 @@
 import React from "react";
+import Title from "./title";
 
 import Container from "./container";
 const WhyChoose = () => {
   return (
     <section className="whyChoose">
       <Container>
-        <div className="whyChoose__text u-text-center">
-          <h4 className="heading-quaternary u-text-uppercase">
-            <span className="heading-count">03</span> Why Choose
-          </h4>
-          <h2 className="heading-secondary">
-            Why Choose Our Properties Of Real Estate Industries
-          </h2>
-        </div>
+        <Title
+          count="03"
+          subTitle="Why Choose"
+          title="Why Choose Our Properties Of Real Estate Industries"
+          className="whyChoose__text u-text-center"
+        />
         <div className="whyChoose__content">
           <div className="whyChoose__row">
             <div className="whyChoose__item whyChoose__item--friendly u-d-flex-a-j-center">
