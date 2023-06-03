@@ -23,12 +23,20 @@
     gap: 6rem;
     padding-bottom: 10rem;
     border-bottom: 1px solid #dac5bb;
+
+    @include respond(smallScreens) {
+      flex-direction: column;
+    }
   }
   &__text {
     margin-bottom: 1.5rem;
   }
   &__image {
+    display: inline-flex;
     width: 40%;
+    @include respond(smallScreens) {
+      width: auto;
+    }
 
     img {
       width: 100%;
@@ -37,6 +45,10 @@
   }
   &__details {
     width: 60%;
+
+    @include respond(smallScreens) {
+      width: 100%;
+    }
   }
   &__points {
     display: flex;
@@ -51,9 +63,17 @@
     display: flex;
     gap: 4.5rem;
 
+    @include respond(mobile) {
+      flex-direction: column;
+    }
+
     img {
       width: 7rem;
       height: auto;
+
+      @include respond(smallScreens) {
+        width: 9rem;
+      }
     }
   }
   &__description {
