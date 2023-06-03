@@ -3,6 +3,7 @@ import Head from "next/head";
 
 import Banner from "@/components/banner";
 import IntroVideo from "@/components/introVideo";
+import Process from "@/components/process";
 const AboutPage = () => {
   return (
     <React.Fragment>
@@ -49,6 +50,7 @@ const AboutPage = () => {
             </div>
           </div>
         </IntroVideo>
+        <Process />
       </>
     </React.Fragment>
   );
