@@ -1,8 +1,15 @@
 .process {
+  padding: 9rem 0;
   &__content {
     display: flex;
     gap: 3rem;
     margin-top: 3.5rem;
+
+    @include respond(smallScreens) {
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 2rem;
+    }
   }
   &__item {
     position: relative;
@@ -11,6 +18,18 @@
     gap: 1.2rem;
     padding: 5rem 3rem;
     background: linear-gradient(125deg, #fff1dc, #ffdbcb);
+
+    @include respond(smallScreens) {
+      width: 48.5%;
+    }
+    @include respond(tablets) {
+      width: 100%;
+    }
+
+    & > * {
+      position: relative;
+      z-index: 2;
+    }
   }
   &__count {
     width: 10rem;
@@ -23,5 +42,6 @@
     position: absolute;
     right: 0;
     top: 0;
+    z-index: 1;
   }
 }

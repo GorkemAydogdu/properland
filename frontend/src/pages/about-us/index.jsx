@@ -4,6 +4,7 @@ import Head from "next/head";
 import Banner from "@/components/banner";
 import IntroVideo from "@/components/introVideo";
 import Process from "@/components/process";
+import Testimonial from "@/components/testimonial";
 const AboutPage = () => {
   return (
     <React.Fragment>
@@ -51,6 +52,7 @@ const AboutPage = () => {
           </div>
         </IntroVideo>
         <Process />
+        <Testimonial />
       </>
     </React.Fragment>
   );

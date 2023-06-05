@@ -5,7 +5,7 @@
     rgba(255, 233, 223, 1) 0%,
     rgba(255, 255, 255, 1) 65%
   );
-  padding: 9rem 4rem;
+  padding: 9rem 4rem 0;
 
   @include respond(laptops) {
     padding: 8rem 0;
