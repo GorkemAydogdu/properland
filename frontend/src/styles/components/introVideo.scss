@@ -70,10 +70,6 @@
     img {
       width: 7rem;
       height: auto;
-
-      @include respond(smallScreens) {
-        width: 9rem;
-      }
     }
   }
   &__description {

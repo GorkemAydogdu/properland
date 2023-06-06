@@ -5,6 +5,7 @@ import Banner from "@/components/banner";
 import IntroVideo from "@/components/introVideo";
 import Process from "@/components/process";
 import Testimonial from "@/components/testimonial";
+import LearnMore from "@/components/learnMore";
 const AboutPage = () => {
   return (
     <React.Fragment>
@@ -53,6 +54,7 @@ const AboutPage = () => {
         </IntroVideo>
         <Process />
         <Testimonial />
+        <LearnMore />
       </>
     </React.Fragment>
   );
