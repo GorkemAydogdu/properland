@@ -6,6 +6,7 @@ import IntroVideo from "@/components/introVideo";
 import Process from "@/components/process";
 import Testimonial from "@/components/testimonial";
 import LearnMore from "@/components/learnMore";
+import Counter from "@/components/counter";
 const AboutPage = () => {
   return (
     <React.Fragment>
@@ -55,6 +56,7 @@ const AboutPage = () => {
         <Process />
         <Testimonial />
         <LearnMore />
+        <Counter className="counter__alternative" />
       </>
     </React.Fragment>
   );

@@ -2,9 +2,9 @@ import React from "react";
 
 import Container from "./container";
 
-const Counter = () => {
+const Counter = ({ className }) => {
   return (
-    <section className="counter">
+    <section className={`counter ${className === undefined ? "" : className}`}>
       <Container>
         <div className="counter__item u-d-flex-a-center">
           <span className="heading-secondary">56,180</span>
