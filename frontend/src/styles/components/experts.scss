@@ -1,0 +1,70 @@
+.experts {
+  &__content {
+    display: flex;
+    gap: 2rem;
+    margin-top: 4.5rem;
+
+    @include respond(tablets) {
+      flex-direction: column;
+    }
+  }
+  &__item {
+    width: 25%;
+
+    @include respond(tablets) {
+      width: 100%;
+    }
+  }
+
+  @media only screen and (min-width: 1025px) {
+    &__item:hover &__infos {
+      background-color: $color-secondary;
+    }
+    &__item:hover .description {
+      color: $color-white;
+    }
+  }
+
+  &__image {
+    display: flex;
+    width: 100%;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  &__infos,
+  .description {
+    transition: all linear 200ms;
+  }
+
+  &__infos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2.5rem 2rem;
+
+    @media only screen and (min-width: 1367px) {
+      min-height: 15rem;
+    }
+  }
+  &__details {
+    justify-content: space-between;
+    margin-top: 0.8rem;
+
+    @include respond(smallScreens) {
+      align-items: flex-start;
+      flex-direction: column;
+      gap: 1.2rem;
+    }
+  }
+  &__social {
+    display: flex;
+    align-items: baseline;
+    gap: 1.8rem;
+
+    @include respond(laptops) {
+      gap: 1.6rem;
+    }
+  }
+}

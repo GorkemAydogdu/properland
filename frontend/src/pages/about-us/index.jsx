@@ -7,6 +7,9 @@ import Process from "@/components/process";
 import Testimonial from "@/components/testimonial";
 import LearnMore from "@/components/learnMore";
 import Counter from "@/components/counter";
+import Experts from "@/components/experts";
+import Brands from "@/components/brands";
+import Footer from "@/layout/footer/footer";
 const AboutPage = () => {
   return (
     <React.Fragment>
@@ -57,6 +60,9 @@ const AboutPage = () => {
         <Testimonial />
         <LearnMore />
         <Counter className="counter__alternative" />
+        <Experts />
+        <Brands />
+        <Footer />
       </>
     </React.Fragment>
   );
