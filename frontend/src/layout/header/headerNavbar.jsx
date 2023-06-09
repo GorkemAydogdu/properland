@@ -32,9 +32,9 @@ const HeaderNavbar = () => {
           </Link>
         </li>
         <li className="header__item">
-          <a href="/" className="header__link">
+          <Link href="/properties" className="header__link">
             Properties
-          </a>
+          </Link>
         </li>
         <li
           onMouseEnter={MouseEnterHandler}

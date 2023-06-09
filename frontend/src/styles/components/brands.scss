@@ -1,22 +1,16 @@
 .brands {
-  margin: 9rem 0;
-
-  @include respond(laptops) {
-    padding: 8rem 0;
-  }
-  @include respond(smallScreens) {
-    padding: 7rem 0;
-  }
-  @include respond(tablets) {
-    padding: 6rem 0;
-  }
+  margin-bottom: 9rem;
 
   & .container {
     padding: 10rem 14rem;
     background-color: $color-grey-light-2;
 
+    @include respond(laptops) {
+      padding: 10rem;
+    }
+
     @include respond(smallScreens) {
-      padding: 5rem 9rem;
+      padding: 5rem 0;
     }
 
     a {
