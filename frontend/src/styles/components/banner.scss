@@ -18,6 +18,12 @@
     width: 68%;
   }
 
+  &__fullImage {
+    background: url("https://assets.website-files.com/63525de8322ba72165834b06/6360de20701e5f70068a6216_property-large-image-8.jpg")
+      50% 50% no-repeat;
+    min-height: 72rem;
+  }
+
   &__content {
     display: flex;
     margin: 14rem 0 0;

@@ -23,7 +23,7 @@ const Property = () => {
         />
         <div className="property__content">
           <div className="property__item">
-            <a href="/" className="property__image">
+            <a href="/propertyDetail" className="property__image">
               <Image src={Appartment} alt="Appartment" />
             </a>
             <div className="property__price-wrap">
@@ -31,7 +31,7 @@ const Property = () => {
               <button className="button button--sale">For Sale</button>
             </div>
             <div className="property__name-wrap">
-              <a href="/" className="property__name">
+              <a href="/propertyDetail" className="property__name">
                 Modern Loft in Land River
               </a>
               <div className="property__location">
