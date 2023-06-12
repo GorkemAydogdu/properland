@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "@/layout/header/header";
-import Agency from "@/components/agency";
-import Container from "./container";
+import Agency from "@/components/agency/agency";
+import Container from "../../layout/container";
 
 import LeftParcitle from "@/assets/LeftParticle.png";
 import RightParcitle from "@/assets/RightParticle.png";

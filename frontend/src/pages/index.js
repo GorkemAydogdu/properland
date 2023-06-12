@@ -1,16 +1,17 @@
 import Head from "next/head";
-import Banner from "@/components/banner";
-import Intro from "@/components/intro";
-import Property from "@/components/property";
-import WhyChoose from "@/components/whyChoose";
-import About from "@/components/about";
-import Service from "@/components/service";
-import Testimonial from "@/components/testimonial";
-import Counter from "@/components/counter";
-import Neighborhoods from "@/components/neighborhoods";
-import Brands from "@/components/brands";
-import Blog from "@/components/blog";
+import Banner from "@/components/banner/banner";
+import Intro from "@/components/intro/intro";
+import Property from "@/components/property/property";
+import WhyChoose from "@/components/whyChoose/whyChoose";
+import About from "@/components/about/about";
+import Service from "@/components/service/service";
+import Testimonial from "@/components/testimonial/testimonial";
+import Counter from "@/components/counter/counter";
+import Neighborhoods from "@/components/neighborhoods/neighborhoods";
+import Brands from "@/components/brands/brands";
+import Blog from "@/components/blog/blog";
 import Footer from "@/layout/footer/footer";
+import Title from "@/components/title/title";
 
 export default function Home() {
   return (
@@ -30,16 +31,63 @@ export default function Home() {
         button="Explore Property"
         key={Math.random()}
       />
-      <Intro />
-      <Property />
-      <WhyChoose />
-      <About />
-      <Service />
+      <Intro>
+        <Title
+          count="01"
+          subTitle="Properland Intro"
+          title="Buying & Selling Property In An Easy Way"
+        />
+      </Intro>
+      <Property>
+        <Title
+          count="02"
+          subTitle="Featured Properties"
+          title="Properties for sale in your favorite area"
+          className="property__text u-text-center"
+        />
+      </Property>
+      <WhyChoose>
+        <Title
+          count="03"
+          subTitle="Why Choose"
+          title="Why Choose Our Properties Of Real Estate Industries"
+          className="whyChoose__text u-text-center"
+        />
+      </WhyChoose>
+      <About>
+        <Title
+          count="04"
+          subTitle="About Us"
+          title="42+ years of helping you find the right Propertys"
+        />
+      </About>
+      <Service>
+        <Title
+          count="05"
+          subTitle="Services"
+          title="See How Can Help"
+          className="service__text u-text-center"
+        />
+      </Service>
       <Testimonial />
       <Counter />
-      <Neighborhoods />
+      <Neighborhoods>
+        <Title
+          count="06"
+          subTitle="Neighborhoods"
+          title="Discover The Neighborhoods"
+          className="neighborhoods__text u-text-center"
+        />
+      </Neighborhoods>
       <Brands />
-      <Blog />
+      <Blog>
+        <Title
+          count="07"
+          subTitle="Blog"
+          title="Latest Articles"
+          className="u-text-center"
+        />
+      </Blog>
       <Footer />
     </>
   );

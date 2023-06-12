@@ -22,7 +22,7 @@ const HeaderLogo = () => {
       <div
         ref={menuButtonRef}
         onClick={clickButtonHandler}
-        className="header__menu"
+        className="header__menu u-d-flex-a-j-center"
       >
         <span></span>
       </div>

@@ -1,15 +1,18 @@
 import React from "react";
 import Head from "next/head";
 
-import Banner from "@/components/banner";
-import IntroVideo from "@/components/introVideo";
-import Process from "@/components/process";
-import Testimonial from "@/components/testimonial";
-import LearnMore from "@/components/learnMore";
-import Counter from "@/components/counter";
-import Experts from "@/components/experts";
-import Brands from "@/components/brands";
+import Banner from "@/components/banner/banner";
+import IntroVideo from "@/components/intro/introVideo";
+import Process from "@/components/process/process";
+import Testimonial from "@/components/testimonial/testimonial";
+import LearnMore from "@/components/learnMore/learnMore";
+import Counter from "@/components/counter/counter";
+import Experts from "@/components/experts/experts";
+import Brands from "@/components/brands/brands";
 import Footer from "@/layout/footer/footer";
+
+import Title from "@/components/title/title";
+
 const AboutPage = () => {
   return (
     <React.Fragment>
@@ -25,6 +28,18 @@ const AboutPage = () => {
           key={Math.random()}
         />
         <IntroVideo>
+          <Title
+            count="01"
+            subTitle="Intro Video"
+            title="Buying & Selling Property In An Easy Way"
+            className="introVideo__text"
+          />
+          <p className="description">
+            Distinctively re-engineer revolutionary meta-services and premium At
+            vero eos et accusamus et iusto odio dignissimos ducimus qui
+            blanditiis praesentium voluptatum deleniti atque corrupti quos
+            dolores et quas molestias excepturi.
+          </p>
           <div className="introVideo__points">
             <div className="introVideo__point">
               <img
@@ -56,11 +71,25 @@ const AboutPage = () => {
             </div>
           </div>
         </IntroVideo>
-        <Process />
+        <Process>
+          <Title
+            count="02"
+            subTitle="Process"
+            title="Our Main Focus"
+            className="u-text-center"
+          />
+        </Process>
         <Testimonial />
         <LearnMore />
         <Counter className="counter__alternative" />
-        <Experts />
+        <Experts>
+          <Title
+            count="03"
+            title="Our Property Team"
+            subTitle="Experts"
+            className="u-text-center"
+          />
+        </Experts>
         <Brands />
         <Footer />
       </>

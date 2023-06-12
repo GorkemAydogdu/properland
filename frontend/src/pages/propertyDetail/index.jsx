@@ -1,10 +1,10 @@
 import React from "react";
 import Head from "next/head";
 
-import Banner from "@/components/banner";
-import Property from "@/components/property";
+import Banner from "@/components/banner/banner";
+import Property from "@/components/property/property";
 import Footer from "@/layout/footer/footer";
-import RichText from "@/components/richtext";
+import RichText from "@/components/richtext/richtext";
 
 import Image from "next/image";
 import Location from "@/assets/Location.svg";
@@ -13,7 +13,9 @@ import Bed from "@/assets/Bed.svg";
 import Car from "@/assets/Car.svg";
 import Ruler from "@/assets/Ruler.svg";
 
-import Container from "@/components/container";
+import Title from "@/components/title/title";
+
+import Container from "@/layout/container";
 
 const PropertyDetailPage = () => {
   return (
@@ -121,7 +123,14 @@ const PropertyDetailPage = () => {
             </div>
           </Container>
         </div>
-        <Property />
+        <Property>
+          <Title
+            count="01"
+            subTitle="Properties"
+            title="Properties for sale in your favorite area"
+            className="property__text u-text-center"
+          />
+        </Property>
         <Footer />
       </>
     </>

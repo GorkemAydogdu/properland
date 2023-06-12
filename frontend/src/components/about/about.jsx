@@ -1,19 +1,14 @@
 import React from "react";
-import Container from "./container";
-import Title from "./title";
+import Container from "../../layout/container";
 import Image from "next/image";
 
 import ArrowRight from "@/assets/ArrowRightDark.svg";
-const About = () => {
+const About = ({ children }) => {
   return (
     <section className="about">
       <Container>
         <div className="about__text">
-          <Title
-            count="04"
-            subTitle="About Us"
-            title="42+ years of helping you find the right Propertys"
-          />
+          {children}
           <p className="description">
             Distinctively re-engineer revolutionary meta-services and premium At
             vero eos et accusamus et iusto
