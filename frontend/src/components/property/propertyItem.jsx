@@ -6,6 +6,7 @@ import Bath from "@/assets/Bath.svg";
 import Bed from "@/assets/Bed.svg";
 import Car from "@/assets/Car.svg";
 import Ruler from "@/assets/Ruler.svg";
+import Image from "next/image";
 
 const PropertyItem = () => {
   return (

@@ -16,6 +16,7 @@ import Ruler from "@/assets/Ruler.svg";
 import Title from "@/components/title/title";
 
 import Container from "@/layout/container";
+import Gallery from "@/components/gallery/gallery";
 
 const PropertyDetailPage = () => {
   return (
@@ -123,6 +124,8 @@ const PropertyDetailPage = () => {
             </div>
           </Container>
         </div>
+        <Gallery />
+
         <Property>
           <Title
             count="01"

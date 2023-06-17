@@ -1,5 +1,4 @@
 .property {
-  background-color: $color-grey-light-2;
   padding: 9rem 4rem;
 
   @include respond(laptops) {
@@ -34,7 +33,8 @@
     max-width: 70rem;
   }
   &__item {
-    background-color: $color-white;
+    background-color: $color-grey-light-2;
+
     padding: 4.5rem 4rem;
     border-radius: $default-border-radius;
     width: 49%;

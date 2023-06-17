@@ -144,4 +144,8 @@
   display: flex;
   gap: 8.5rem;
   margin-top: 6rem;
+
+  @include respond(smallScreens) {
+    flex-direction: column;
+  }
 }
