@@ -19,8 +19,6 @@
   }
 
   &__fullImage {
-    background: url("https://assets.website-files.com/63525de8322ba72165834b06/6360de20701e5f70068a6216_property-large-image-8.jpg")
-      50% 50% no-repeat;
     min-height: 72rem;
   }
 
@@ -46,13 +44,13 @@
     display: flex;
     flex-direction: column;
     gap: 3.8rem;
-    width: 56rem;
+    width: 57rem;
     height: max-content;
     position: relative;
     z-index: 20;
 
     @include respond(laptops) {
-      width: 52rem;
+      width: 53rem;
     }
 
     @include respond(tablets) {

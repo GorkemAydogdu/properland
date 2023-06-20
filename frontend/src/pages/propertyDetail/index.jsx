@@ -25,7 +25,10 @@ const PropertyDetailPage = () => {
         <title>Detail</title>
       </Head>
       <>
-        <Banner className="banner__fullImage" />
+        <Banner
+          fullImage="https://assets.website-files.com/63525de8322ba72165834b06/6360de20701e5f70068a6216_property-large-image-8.jpg"
+          className="banner__fullImage"
+        />
         <div className="propertyContent">
           <Container>
             <div className="propertyDetails">

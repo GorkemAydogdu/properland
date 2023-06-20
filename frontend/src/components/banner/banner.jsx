@@ -9,9 +9,24 @@ import ArrowRight from "@/assets/ArrowRightYellow.svg";
 
 import Image from "next/image";
 
-const Banner = ({ agency, title, image, description, button, className }) => {
+const Banner = ({
+  agency,
+  title,
+  image,
+  description,
+  button,
+  className,
+  fullImage,
+}) => {
   return (
-    <section className={`banner ${className === undefined ? "" : className}`}>
+    <section
+      style={{
+        background: `url(${fullImage === undefined ? "" : fullImage}) ${
+          fullImage !== undefined && "50% 50% no-repeat"
+        }`,
+      }}
+      className={`banner ${className === undefined ? "" : className}`}
+    >
       <Container>
         <Header />
         {agency !== undefined && title !== undefined && (

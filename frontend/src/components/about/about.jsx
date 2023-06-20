@@ -1,6 +1,7 @@
 import React from "react";
 import Container from "../../layout/container";
 import Image from "next/image";
+import Link from "next/link";
 
 import ArrowRight from "@/assets/ArrowRightDark.svg";
 const About = ({ children }) => {
@@ -18,10 +19,10 @@ const About = ({ children }) => {
             atque corrupti quos dolores et quas molestias excepturi.Lorem ipsum
             dolor sit amet, consectetur adipiscing elit.
           </p>
-          <a href="/" className="button button--more button--hover">
+          <Link href="/about-us" className="button button--more button--hover">
             Learn More
             <Image src={ArrowRight} alt="Arrow Right" />
-          </a>
+          </Link>
         </div>
       </Container>
     </section>

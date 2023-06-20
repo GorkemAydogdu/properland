@@ -55,9 +55,9 @@ const List = () => {
             </a>
           </li>
           <li className="header__dropdownItem">
-            <a href="/" className="header__link">
+            <Link href="/agents" className="header__link">
               Agents
-            </a>
+            </Link>
           </li>
         </ul>
       </li>
