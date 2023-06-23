@@ -1,19 +1,20 @@
 import React from "react";
+import Link from "next/link";
 
 const ExpertsItem = () => {
   return (
     <>
       <div className="experts__item">
-        <a href="/" className="experts__image">
+        <Link href="/agentsDetail" className="experts__image">
           <img
             src="https://assets.website-files.com/63525de8322ba72165834b06/635a47d6dfb4935e9e0971f0_agent-image-1-p-500.jpg"
             alt=""
           />
-        </a>
+        </Link>
         <div className="experts__infos">
-          <a href="" className="heading-tertiary">
+          <Link href="/agentsDetail" className="heading-tertiary">
             Daryl Dixon
-          </a>
+          </Link>
           <div className="experts__details u-d-flex-a-center">
             <p className="description">Land Seller</p>
             <div className="experts__social">
@@ -40,16 +41,16 @@ const ExpertsItem = () => {
         </div>
       </div>
       <div className="experts__item">
-        <a href="/" className="experts__image">
+        <Link href="/" className="experts__image">
           <img
             src="https://assets.website-files.com/63525de8322ba72165834b06/635a49aefd6f244d1680e0b3_agent-image-2-p-500.jpg"
             alt=""
           />
-        </a>
+        </Link>
         <div className="experts__infos">
-          <a href="" className="heading-tertiary">
+          <Link href="" className="heading-tertiary">
             Elena Gilberts
-          </a>
+          </Link>
           <div className="experts__details u-d-flex-a-center">
             <p className="description">Land Seller</p>
             <div className="experts__social">
@@ -76,16 +77,16 @@ const ExpertsItem = () => {
         </div>
       </div>
       <div className="experts__item">
-        <a href="/" className="experts__image">
+        <Link href="/" className="experts__image">
           <img
             src="https://assets.website-files.com/63525de8322ba72165834b06/635a49bcc66f9de20c41d344_agent-image-3-p-500.jpg"
             alt=""
           />
-        </a>
+        </Link>
         <div className="experts__infos">
-          <a href="" className="heading-tertiary">
+          <Link href="" className="heading-tertiary">
             Peter Parker
-          </a>
+          </Link>
           <div className="experts__details u-d-flex-a-center">
             <p className="description">Land Seller</p>
             <div className="experts__social">
@@ -112,16 +113,16 @@ const ExpertsItem = () => {
         </div>
       </div>
       <div className="experts__item">
-        <a href="/" className="experts__image">
+        <Link href="/" className="experts__image">
           <img
             src="https://assets.website-files.com/63525de8322ba72165834b06/635a49cbe6c49fdf23af959d_agent-image-4-p-500.jpg"
             alt=""
           />
-        </a>
+        </Link>
         <div className="experts__infos">
-          <a href="" className="heading-tertiary">
+          <Link href="" className="heading-tertiary">
             Rosalina William
-          </a>
+          </Link>
           <div className="experts__details u-d-flex-a-center">
             <p className="description">Land Seller</p>
             <div className="experts__social">

@@ -22,6 +22,16 @@
     min-height: 72rem;
   }
 
+  @include respond(smallScreens) {
+    &__agent &__content {
+      flex-direction: column-reverse;
+      gap: 4rem;
+    }
+    &__agent &__text {
+      width: 100%;
+    }
+  }
+
   &__content {
     display: flex;
     margin: 14rem 0 0;
@@ -77,6 +87,45 @@
 
     @include respond(mobile) {
       width: 100%;
+    }
+  }
+
+  &__agent &__content {
+    justify-content: space-between;
+  }
+
+  &__agent &__ImageWrap {
+    width: 55rem;
+    height: auto;
+
+    @include respond(laptops) {
+      width: 50rem;
+    }
+
+    @include respond(smallScreens) {
+      width: 100%;
+    }
+  }
+
+  &__agent &__thumb {
+    background: linear-gradient(107.52deg, #eec1ac 16.64%, #fff6f2);
+    box-shadow: 0 4px 12px rgba(10, 10, 10, 0.21);
+    border-radius: $default-border-radius;
+    padding: 4rem;
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+
+  &__info {
+    gap: 1rem;
+
+    & > p {
+      cursor: default;
+      transition: all 200ms ease;
+      &:hover {
+        color: $color-primary !important;
+      }
     }
   }
 }

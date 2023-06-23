@@ -17,6 +17,8 @@ const Banner = ({
   button,
   className,
   fullImage,
+  email,
+  phone,
 }) => {
   return (
     <section
@@ -43,6 +45,24 @@ const Banner = ({
                 <a href="/" className="button button--white button--hover">
                   {button} <Image src={ArrowRight} alt="Arrow Right" />
                 </a>
+              )}
+              {email !== undefined && (
+                <div className="banner__info u-d-flex-a-center">
+                  <img
+                    src="https://assets.website-files.com/6304f6a27b2b4e7a7062ee94/634e99d4c3259435a6796ca3_contact-link-icon-1.svg"
+                    alt=""
+                  />
+                  <p className="description">{email}</p>
+                </div>
+              )}
+              {phone !== undefined && (
+                <div className="banner__info u-d-flex-a-center">
+                  <img
+                    src="https://assets.website-files.com/6304f6a27b2b4e7a7062ee94/634fb9d7bb51ca969ced2a83_contact-link-icon-2.svg"
+                    alt=""
+                  />
+                  <p className="description">{phone}</p>
+                </div>
               )}
             </div>
             {image !== undefined && (
