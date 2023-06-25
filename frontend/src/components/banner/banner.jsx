@@ -19,6 +19,7 @@ const Banner = ({
   fullImage,
   email,
   phone,
+  children,
 }) => {
   return (
     <section
@@ -64,6 +65,7 @@ const Banner = ({
                   <p className="description">{phone}</p>
                 </div>
               )}
+              {children}
             </div>
             {image !== undefined && (
               <div className="banner__ImageWrap">

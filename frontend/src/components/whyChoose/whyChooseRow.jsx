@@ -2,7 +2,7 @@ import React from "react";
 
 const WhyChooseRow = () => {
   return (
-    <div>
+    <>
       <div className="whyChoose__row">
         <div className="whyChoose__item whyChoose__item--friendly u-d-flex-a-j-center">
           <div className="whyChoose__item--image">
@@ -90,7 +90,7 @@ const WhyChooseRow = () => {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

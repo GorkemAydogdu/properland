@@ -1,14 +1,11 @@
 import React from "react";
 
 import Container from "../../layout/container";
-import CounterItems from "./counterItems";
 
-const Counter = ({ className }) => {
+const Counter = ({ className, children }) => {
   return (
     <section className={`counter ${className === undefined ? "" : className}`}>
-      <Container>
-        <CounterItems />
-      </Container>
+      <Container>{children}</Container>
     </section>
   );
 };
