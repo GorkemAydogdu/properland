@@ -52,4 +52,60 @@
   &__line {
     margin: 0 2rem;
   }
+
+  &__single > .container {
+    display: flex;
+    gap: 4.5rem;
+
+    padding: 12.5rem 0;
+    border-bottom: 1px solid #d9d9d9;
+
+    @include respond(smallScreens) {
+      flex-direction: column;
+    }
+    & .blog__text {
+      margin: 0;
+      max-width: 50% !important;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+
+      @include respond(smallScreens) {
+        max-width: 100% !important;
+        align-items: center;
+        text-align: center;
+      }
+    }
+
+    & .blog__title {
+      margin: 0;
+    }
+
+    & .description:last-child {
+      color: #7d7d7d;
+    }
+
+    & .blog__image {
+      width: 50%;
+      @include respond(smallScreens) {
+        width: 100%;
+      }
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    & .button--more {
+      padding: 2.5rem 4rem;
+      border: 2px solid $color-secondary;
+      transition: all ease 200ms;
+
+      &:hover {
+        background-color: $color-white;
+        color: $color-secondary;
+      }
+    }
+  }
 }

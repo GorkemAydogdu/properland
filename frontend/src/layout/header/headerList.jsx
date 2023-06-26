@@ -62,9 +62,9 @@ const List = () => {
         </ul>
       </li>
       <li className="header__item">
-        <a href="/" className="header__link">
+        <Link href="/blog" className="header__link">
           Blog
-        </a>
+        </Link>
       </li>
     </ul>
   );
