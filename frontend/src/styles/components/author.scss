@@ -1,0 +1,48 @@
+.author {
+  margin: 9rem 0;
+  padding: 0 4rem;
+  background-color: $color-secondary;
+
+  & .container {
+    display: flex;
+    gap: 2.5rem;
+    max-width: 98rem;
+    margin: auto;
+    padding: 10rem 0;
+
+    @include respond(tablets) {
+      flex-direction: column;
+    }
+  }
+
+  &__image {
+    @include respond(mobile) {
+      margin: auto;
+    }
+
+    img {
+      border-radius: 50%;
+    }
+  }
+
+  &__info {
+    justify-content: space-between;
+
+    @include respond(mobile) {
+      align-items: flex-start;
+      gap: 2rem;
+      flex-direction: column;
+      margin-bottom: 2rem;
+    }
+  }
+  &__name {
+    .description {
+      margin-top: 0.5rem;
+      color: $color-white;
+    }
+  }
+  &__description {
+    margin-top: 1.5rem;
+    color: $color-primary !important;
+  }
+}

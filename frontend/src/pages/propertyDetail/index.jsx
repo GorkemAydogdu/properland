@@ -4,7 +4,6 @@ import Head from "next/head";
 import Banner from "@/components/banner/banner";
 import Property from "@/components/property/property";
 import Footer from "@/layout/footer/footer";
-import RichText from "@/components/richtext/richtext";
 
 import Image from "next/image";
 import Location from "@/assets/Location.svg";
@@ -72,13 +71,84 @@ const PropertyDetailPage = () => {
               </div>
             </div>
             <div className="propertyWrapper">
-              <RichText
-                headingSecondary="About the property"
-                descriptionFirst="Laminate flooring is a more affordable option in place of hardwood flooring that can cost almost ten times the cost of laminate flooring. Laminate flooring is light, durable and can be made to resemble."
-                descriptionSecond="Uniquely matrix economically sound value through cooperative technology. Competently parallel task fully researched data and enterprise process improvements. Collaboratively expedite quality manufactured products via client-focused results quickly communicate enabled technology and turnkey leadership skills. Uniquely enable accurate supply chains rather than friction technology."
-                headingTertiary="Make real time a build services"
-                descriptionThird="It is a long established fact that a reader will be distracted by the readable content page when looking at its layout. The point of using Lorem Ipsum is that it more-or-less normal distribution of letters, as felt opposed to using 'Content here making it look like readable."
-              />
+              <div className="richtext">
+                <h2 className="heading-secondary">About the property</h2>
+                <p className="description">
+                  Laminate flooring is a more affordable option in place of
+                  hardwood flooring that can cost almost ten times the cost of
+                  laminate flooring. Laminate flooring is light, durable and can
+                  be made to resemble.
+                  <br />
+                  <br />
+                  Appropriately empower dynamic leadership skills after business
+                  portals. Globally my cardinate interactive supply chains with
+                  distinctive quality vectors global sources services. Uniquely
+                  matrix economically sound value through cooperative
+                  technology. Competently parallel task fully researched data
+                  and enterprise process improvements.
+                </p>
+                <ul>
+                  <li>
+                    Dynamically target high-payoff intellectual capital for
+                    customized
+                  </li>
+                  <li>Interactively procrastinate high-payoff content</li>
+                  <li>
+                    Credibly reinter mediate backend ideas for cross-platform
+                    models
+                  </li>
+                </ul>
+                <p className="description">
+                  Uniquely matrix economically sound value through cooperative
+                  technology. Competently parallel task fully researched data
+                  and enterprise process improvements. Collaboratively expedite
+                  quality manufactured products via client-focused results
+                  quickly communicate enabled technology and turnkey leadership
+                  skills. Uniquely enable accurate supply chains rather than
+                  friction technology.
+                </p>
+                <blockquote>
+                  “Democracy must be built through open societies that share
+                  information. When there is information, there is
+                  enlightenment. When there is no sharing of power, no rule of
+                  law, no accountability, there is abuse, corruption and
+                  indignation.”
+                </blockquote>
+                <h3 className="heading-tertiary">
+                  Make real time a build services
+                </h3>
+                <p className="description">
+                  Collaboratively administrate empowered markets via
+                  plug-and-play networks. Dynamically procrastinate B2C users
+                  after installed base benefits. Dramatically visualize customer
+                  directed convergence without revolutionary ROI.
+                </p>
+                <ol>
+                  <li>
+                    It brings the right people together with all the right
+                    information and tools to get work done
+                  </li>
+                  <li>
+                    We provide operational efficiency, data security, and
+                    flexible scale
+                  </li>
+                  <li>
+                    Your best work, together in one package that works
+                    seamlessly from your computer
+                  </li>
+                  <li>
+                    Delivers the tools you need to save time Improve field
+                    performance always
+                  </li>
+                </ol>
+                <p className="description">
+                  It is a long established fact that a reader will be distracted
+                  by the readable content page when looking at its layout. The
+                  point of using Lorem Ipsum is that it more-or-less normal
+                  distribution of letters, as felt opposed to using 'Content
+                  here making it look like readable.
+                </p>
+              </div>
               <div className="propertyDetails__sidebar">
                 <div className="propertyDetails__aboutAgent">
                   <h3 className="heading-tertiary">About Agent</h3>
