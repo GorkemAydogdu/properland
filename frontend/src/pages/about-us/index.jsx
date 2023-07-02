@@ -27,7 +27,7 @@ const AboutPage = () => {
           image="https://assets.website-files.com/6304f6a27b2b4e7a7062ee94/634e7523366b0ffd0bdc5f90_about-banner.png"
           key={Math.random()}
         />
-        <IntroVideo>
+        <IntroVideo image="https://assets.website-files.com/6304f6a27b2b4e7a7062ee94/634e7681735609aec58b7ec0_about-intro-image.jpg">
           <Title
             count="01"
             subTitle="Intro Video"
@@ -81,7 +81,7 @@ const AboutPage = () => {
         </Process>
         <Testimonial />
         <LearnMore />
-        <Counter className="counter__alternative" />
+        <Counter className="counter__alternative"></Counter>
         <Experts>
           <Title
             count="03"

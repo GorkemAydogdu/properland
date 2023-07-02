@@ -50,9 +50,9 @@ const List = () => {
         Pages <Image src={ArrowDown} alt="Arrow" />
         <ul ref={dropDownList} className="header__dropdownList">
           <li className="header__dropdownItem">
-            <a href="/" className="header__link">
+            <Link href="/services" className="header__link">
               Services
-            </a>
+            </Link>
           </li>
           <li className="header__dropdownItem">
             <Link href="/agents" className="header__link">

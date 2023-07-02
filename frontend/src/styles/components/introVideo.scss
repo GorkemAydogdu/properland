@@ -78,4 +78,16 @@
       color: #7d7d7d;
     }
   }
+
+  &__mission {
+    max-width: 52rem;
+
+    @include respond(smallScreens) {
+      max-width: 100%;
+    }
+  }
+
+  & .heading-tertiary {
+    margin: 3rem 0 0.5rem;
+  }
 }
