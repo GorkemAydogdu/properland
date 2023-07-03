@@ -4,7 +4,7 @@ import Home from "@/assets/Home.svg";
 
 const Agency = ({ children }) => {
   return (
-    <div className="agency u-text-uppercase">
+    <div className="agency u-text-uppercase u-d-flex-a-center">
       <Image src={Home} alt="Home" />
       <h3 className="agency__title">{children}</h3>
     </div>
