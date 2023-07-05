@@ -12,7 +12,14 @@ const Faq = () => {
         </h2>
         <div className="faq__content">
           <div className="faq__item">
-            <div className="faq__question">
+            <div
+              className="faq__question"
+              onClick={(event) => {
+                event.currentTarget.parentElement.classList.toggle(
+                  "faq__item--active"
+                );
+              }}
+            >
               <h3 className="faq__title">
                 How do I prepare my home before I sell it?
               </h3>
@@ -35,7 +42,14 @@ const Faq = () => {
             </div>
           </div>
           <div className="faq__item">
-            <div className="faq__question">
+            <div
+              className="faq__question"
+              onClick={(event) => {
+                event.currentTarget.parentElement.classList.toggle(
+                  "faq__item--active"
+                );
+              }}
+            >
               <h3 className="faq__title">
                 How do I prepare my home before I sell it?
               </h3>
@@ -58,7 +72,14 @@ const Faq = () => {
             </div>
           </div>
           <div className="faq__item">
-            <div className="faq__question">
+            <div
+              className="faq__question"
+              onClick={(event) => {
+                event.currentTarget.parentElement.classList.toggle(
+                  "faq__item--active"
+                );
+              }}
+            >
               <h3 className="faq__title">
                 How do I prepare my home before I sell it?
               </h3>
@@ -81,7 +102,14 @@ const Faq = () => {
             </div>
           </div>
           <div className="faq__item">
-            <div className="faq__question">
+            <div
+              className="faq__question"
+              onClick={(event) => {
+                event.currentTarget.parentElement.classList.toggle(
+                  "faq__item--active"
+                );
+              }}
+            >
               <h3 className="faq__title">
                 How do I prepare my home before I sell it?
               </h3>
@@ -104,7 +132,14 @@ const Faq = () => {
             </div>
           </div>
           <div className="faq__item">
-            <div className="faq__question">
+            <div
+              className="faq__question"
+              onClick={(event) => {
+                event.currentTarget.parentElement.classList.toggle(
+                  "faq__item--active"
+                );
+              }}
+            >
               <h3 className="faq__title">
                 How do I prepare my home before I sell it?
               </h3>
