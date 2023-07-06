@@ -8,6 +8,7 @@ import RightParcitle from "@/assets/RightParticle.png";
 import ArrowRight from "@/assets/ArrowRightYellow.svg";
 
 import Image from "next/image";
+import Form from "../form/form";
 
 const Banner = ({
   agency,
@@ -19,6 +20,7 @@ const Banner = ({
   fullImage,
   email,
   phone,
+  form,
   children,
 }) => {
   return (
@@ -71,6 +73,15 @@ const Banner = ({
               <div className="banner__ImageWrap">
                 <img className="banner__thumb" src={image} alt="" />
               </div>
+            )}
+            {form !== undefined && (
+              <Form>
+                <h2 className="heading-secondary">Quick Contact</h2>
+                <p className="description">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                  do eiusmod tempor incididunt ut labore
+                </p>
+              </Form>
             )}
           </section>
         )}

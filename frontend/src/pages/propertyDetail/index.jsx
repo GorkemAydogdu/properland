@@ -4,6 +4,7 @@ import Head from "next/head";
 import Banner from "@/components/banner/banner";
 import Property from "@/components/property/property";
 import Footer from "@/layout/footer/footer";
+import Form from "@/components/form/form";
 
 import Image from "next/image";
 import Location from "@/assets/Location.svg";
@@ -186,13 +187,7 @@ const PropertyDetailPage = () => {
                     </div>
                   </div>
                 </div>
-                <div className="propertyDetails__form">
-                  <input type="text" placeholder="Name" />
-                  <input type="email" placeholder="Email" />
-                  <input type="number" placeholder="Phone" />
-                  <input type="text" placeholder="Message" />
-                  <button className="button button--dark">Submit</button>
-                </div>
+                <Form />
               </div>
             </div>
           </Container>

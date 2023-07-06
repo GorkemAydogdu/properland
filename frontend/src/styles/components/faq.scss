@@ -2,6 +2,7 @@
   margin-top: 14rem;
   & .container {
     max-width: 90rem;
+    margin: auto !important;
 
     & .agency {
       margin: auto;
@@ -30,6 +31,21 @@
   &__button {
     cursor: pointer;
   }
+  &__item--active &__button {
+    img {
+      transition: rotate 200ms ease;
+      rotate: 45deg;
+    }
+  }
+  &__item--active &__answer {
+    height: auto;
+    opacity: 1;
+    visibility: visible;
+  }
+  &__item--active .description {
+    scale: 1 !important;
+  }
+
   &__title {
     color: $color-primary;
 
@@ -49,14 +65,19 @@
     background-color: $color-secondary;
   }
   &__answer {
+    display: flex;
     height: 0;
     opacity: 0;
     visibility: hidden;
-
-    transition: all 200ms ease;
+    transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
 
     .description {
+      scale: 0.9;
+
+      margin-top: 2rem;
       color: #7d7d7d;
+
+      transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
     }
   }
 }

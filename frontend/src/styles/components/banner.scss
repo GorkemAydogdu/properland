@@ -63,6 +63,12 @@
     @include respond(mobile) {
       gap: 32rem;
     }
+
+    & .form {
+      button {
+        margin-top: auto;
+      }
+    }
   }
 
   &__text {
@@ -188,6 +194,21 @@
         &:hover {
           color: $color-link;
         }
+      }
+    }
+  }
+  &__location {
+    display: flex;
+    gap: 3.5rem;
+
+    &--item {
+      padding: 4.5rem 5.5rem;
+      background-color: $color-white;
+      border-radius: $default-border-radius;
+
+      .description {
+        color: #8d8d8d;
+        margin-top: 1rem;
       }
     }
   }
