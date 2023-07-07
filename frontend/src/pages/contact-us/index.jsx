@@ -2,6 +2,8 @@ import React from "react";
 import Head from "next/head";
 import Banner from "@/components/banner/banner";
 import Faq from "@/components/faq/faq";
+import Footer from "@/layout/footer/footer";
+import Counter from "@/components/counter/counter";
 
 const ContactPage = () => {
   return (
@@ -39,6 +41,8 @@ const ContactPage = () => {
           </div>
         </Banner>
         <Faq />
+        <Counter className="counter__alternative" />
+        <Footer />
       </>
     </>
   );

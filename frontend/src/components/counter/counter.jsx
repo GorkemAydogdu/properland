@@ -2,7 +2,7 @@ import React from "react";
 
 import Container from "../../layout/container";
 
-const Counter = ({ className, children }) => {
+const Counter = ({ className }) => {
   return (
     <section className={`counter ${className === undefined ? "" : className}`}>
       <Container>

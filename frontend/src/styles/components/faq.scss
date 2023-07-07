@@ -1,9 +1,6 @@
 .faq {
-  margin-top: 14rem;
+  margin: 14rem 0;
   & .container {
-    max-width: 90rem;
-    margin: auto !important;
-
     & .agency {
       margin: auto;
     }
@@ -54,6 +51,10 @@
     font-size: 3rem;
 
     line-height: $line-height-primary;
+
+    @include respond(tablets) {
+      width: 80%;
+    }
   }
   &__button {
     border: none;

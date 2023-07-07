@@ -49,13 +49,14 @@
 
   &__content {
     display: flex;
+    justify-content: space-between;
     margin: 14rem 0 0;
 
     @include respond(laptops) {
       margin: 10rem 0;
     }
 
-    @include respond(tablets) {
+    @include respond(smallScreens) {
       flex-direction: column;
       gap: 20rem;
     }
@@ -65,6 +66,16 @@
     }
 
     & .form {
+      width: 40%;
+
+      @include respond(laptops) {
+        padding: 6rem 4rem;
+      }
+
+      @include respond(smallScreens) {
+        width: 100%;
+      }
+
       button {
         margin-top: auto;
       }
@@ -80,7 +91,11 @@
     position: relative;
     z-index: 20;
 
-    @include respond(tablets) {
+    @include respond(laptops) {
+      width: 55rem;
+    }
+
+    @include respond(smallScreens) {
       width: 100%;
     }
 
